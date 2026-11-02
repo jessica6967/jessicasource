@@ -1,0 +1,82 @@
+
+/* Pengaturan halaman */
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    margin: 50px;
+}
+
+/* Container utama */
+.container {
+    background-color: palevioletred;
+    padding: 5px;
+}
+
+/* Judul */
+h4 {
+    margin: 5px 0 10px 0;
+    font-size: 13px;
+}
+
+/* Daftar buah */
+.buah {
+    background-color: palegreen;
+    padding: 8px;
+    margin: 5px;
+}
+
+.buah ol {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.buah li {
+    background-color: palegoldenrod;
+    border: 1px solid palevioletred;
+    padding: 2px;
+    margin-bottom: 1px;
+}
+
+/* Daftar Lorem Ipsum */
+.lorem {
+    background-color: darkseagreen;
+    padding: 8px;
+    margin: 5px;
+}
+
+.lorem ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.lorem li {
+    background-color: pink;
+    border: 1px solid darkseagreen;
+    padding: 2px;
+    margin-bottom: 1px;
+}
+
+/* Daftar Icon */
+.icon {
+    background-color: darkseagreen;
+    padding: 8px;
+    margin: 5px;
+}
+
+.icon ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.icon li {
+    background-color: yellow;
+    border: 1px solid darkseagreen;
+    padding: 3px;
+    margin-bottom: 1px;
+}
+
+/* Warna icon */
+.icon i {
+    color: black;
+    margin-right: 3px;
+}

@@ -1,0 +1,513 @@
+body{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    color:antiquewhite ;
+    background-color: pink;
+    text-align: center;
+
+}
+
+h1{
+    color:antiquewhite ;
+    background-color: rgb(13, 13, 14);
+    text-align: center;
+}
+
+div.biodata{
+     margin: 30px auto;
+     width: 50%;
+     background-color: rgba(252, 241, 98, 0.76);
+     color: pink ;
+     padding:30px;
+     border-radius: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+div.Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 60px; 
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid pink;
+    
+}
+
+div.foto img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  
+}
+.foto img.top{
+  opacity: 1;
+  z-index: 2;
+
+}
+.foto:hover img.top{
+  opacity: 0;
+  transform: scale(1.1);
+
+}
+.foto img.bottom{
+  opacity: 0;
+  z-index: 1;
+}
+.foto:hover img.bottom{
+  opacity: 1;
+  transform: scale(1.1);
+}
+div.makanan{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+img{
+  padding: 10px;
+}
+div.Samgyeopsal{
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 black;
+  margin-bottom: 25px;
+  background-color: rgb(251, 253, 102);
+}
+div.Samgyeopsal:hover{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+div.English-breakfast{
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 black;
+  margin-bottom: 25px;
+  background-color: rgb(245, 255, 99);
+}
+div.English-breakfast:hover{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+div.American-breakfast{
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 black;
+  margin-bottom: 25px;
+  background-color: rgb(237, 235, 100);
+}
+div.American-breakfast:hover{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+img.img-menu {
+    position: static !important;
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    padding: 0 !important;
+    }
+div.Minuman{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+img{
+  padding: 10px;
+}
+div.Matcha{
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 black;
+  margin-bottom: 25px;
+  background-color: rgb(203, 247, 121);
+}
+div.Matcha:hover{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+div.Hot-Chocolate{
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 black;
+  margin-bottom: 25px;
+  background-color: rgb(155, 237, 100);
+}
+div.Hot-Chocolate:hover{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+div.Coke-Zero{
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 black;
+  margin-bottom: 25px;
+  background-color: rgb(207, 237, 100);
+}
+div.Coke-Zero:hover{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+div.Film-Favoritbox {
+  display: flex;
+  gap: 25px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 25px 40px;
+
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: thin;
+}
+div.Film {
+  min-width: 220px;
+  height: 350px;
+
+  background-color: blanchedalmond;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  box-shadow: 0 5px 12px rgba(black);
+
+  scroll-snap-align: center;
+
+  transition: transform 0.3s ease;
+}
+
+div.Film {
+  transform: translateY(-10px);
+}
+
+div.Film img {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+
+  padding: 0;
+}
+
+div.Film h3 {
+  margin: 12px 5px 5px 5px;
+
+  color: cadetblue;
+}
+
+div.Film p {
+  margin: 5px;
+
+  font-size: 14px;
+}
+
+div.destinasi-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  
+  padding: 40px 20px 60px 20px;
+
+  flex-wrap: wrap;
+}
+
+div.destinasi {
+  position: relative;
+
+  width: 270px;
+
+  background-color: rgb(247, 237, 101);
+
+  padding: 12px 12px 25px 12px;
+
+  box-shadow: 8px 10px 20px rgba(252, 241, 98, 0.76);
+
+  border-radius: 5px;
+
+  transition:
+  transform 0.4s ease,
+  box-shadow 0.4s ease;
+
+  cursor:pointer;
+}
+
+div.destinasi:nth-child(1) {
+  transform: rotate(-4deg);
+}
+div.destinasi:nth-child(2) {
+  transform: rotate(3deg);
+}
+div.destinasi:nth-child(3) {
+  transform: rotate(-2deg);
+}
+
+div.destinasi:hover {
+  transform: rotate(0deg) translateY(-15px) scale(1,05);
+
+  box-shadow: 12px 18px 30px rgba(252, 241, 98, 0.76);
+
+  z-index: 5;
+} 
+
+div.destinasi img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+
+  padding: 0;
+
+  display: block;
+}
+
+div.destinasi-info {
+  text-align: center;
+
+  padding: 10px 5px 0px 5px;
+}
+
+div.destinasi-info h3 {
+  color: rgb(1, 10, 10);
+
+  margin: 8px 0;
+
+  font-size: 21px
+}
+
+div.destinasi-info p {
+  font-size: 14px;
+
+  color:rgb(0, 11, 20);
+
+  line-height: 1.5;
+}
+
+div.stamp {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  padding: 5px 8px;
+  
+  background-color: rgba(252, 241, 98, 0.76);
+
+  border: 2px dashed cadetblue;
+
+  color: cadetblue;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  transform: rotate(8deg);
+}
+
+div.bagian-spotify {
+  width: 80%;
+  max-width: 900px;
+
+  margin: 30px auto 60px auto;
+
+  background: linear-gradient(
+    135deg,
+     pink,
+    #fcd47d
+  );
+
+  border-radius: 25px;
+
+  padding: 30px;
+
+  display: flex;
+
+  gap: 30px;
+
+  align-items: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0,4);
+
+  color: rgb(0, 0, 0);
+}
+
+div.spotify-profile {
+  width: 40%;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+img.spotify-profile-img {
+  width: 180px !important;
+  height: 180px !important;
+
+  border-radius: 50% !important;
+
+  object-fit: cover  !important;
+
+  padding: 0 !important;
+  
+  display: block;
+
+  margin: 0 auto 20px auto;
+
+  border: 4px solid #000704;
+}
+
+div.spotify-kecil {
+  color: #01140b;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  font-weight: bold;
+}
+
+div.spotify-info h3 {
+  font-size:  24px;
+
+  margin: 10px 0;
+}
+
+div.spotify-info p {
+  color: pink;
+}
+
+div.spotify-tombol {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 12px 20px;
+
+  background-color: #000000;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 25px;
+
+  font-weight: bold;
+
+  transition: transform 0.3s ease;
+}
+
+div.spotify-tombol:hover {
+  transform: scale(1.08);
+}
+
+div.playlist {
+  width: 60%;
+
+  padding: 20px;
+
+}
+
+div.playlist h3 {
+  margin-bottom: 20px;
+
+  color: rgb(0, 0, 0);
+}
+
+div.lagu {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  transition: background-color 0.3s ease;
+}
+
+div.lagu:hover {
+  background-color: #282828;
+}
+
+div.lagu span { 
+  color: #000000;
+
+  font-weight: bold;
+
+  width: 30px;
+}
+
+div.lagu p {
+  flex: 1;
+  margin: o;
+  color: white;
+}
+
+div.lagu small {
+  color: #b3b3b3;
+}
+
+
+  
+/* membuat style pada navigator/topnav */
+.topnav {
+    overflow: hidden;
+    background-color: bisque;
+    margin-bottom: 20px;
+}
+/* membuat style link pada navigator/topnav */
+.topnav a {
+    float: left;
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;  
+}
+.topnav a:hover {
+    background-color:  pink;
+    color: maroon;
+}
+.column {
+    float: left;
+    padding: 10px;
+}
